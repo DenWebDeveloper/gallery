@@ -29,7 +29,7 @@ export default class Demo extends React.Component {
     @observable mouseCircleDelta = [0, 0];
     @observable lastPress = null;
     @observable isPressed = false;
-    @observable order = [0,1];
+    @observable order = range(11);
     @observable count = 11;
 
     componentDidMount() {
