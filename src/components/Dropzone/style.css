@@ -1,0 +1,28 @@
+.dropzone-img {
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dotted #f89554;
+    color: #f2e2dd;
+    line-height: 1;
+    animation-iteration-count: infinite;
+    animation-name: border;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+.dropzone-img p {
+    margin: 0;
+}
+
+.dropzone-img:hover {
+    cursor: pointer;
+    border-color:#426c79;
+}
+
+@keyframes border {
+    from {border-color: #f89554;}
+    to {border-color: #426c79;}
+}

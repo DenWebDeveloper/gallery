@@ -1,0 +1,19 @@
+.general-settings .form-group {
+    margin-top: 10px;
+    border: 2px dotted #7f7f7f;
+    padding: 10px;
+}
+
+.general-settings .form-control {
+    background-color: #00213a;
+    margin-bottom: 10px;
+}
+
+.general-settings .form-control:focus {
+    background-color: #00213a;
+}
+
+.general-settings .badge-dark {
+    color: #426c79;
+    width: 100%;
+}

@@ -1,0 +1,19 @@
+body {
+    padding-top: 10px;
+    color: #426c79;
+    background-color: #000712;
+}
+
+:root {
+    --bgc: #000712;
+    --bginput: #00213a;
+    --text: #426c79;
+    --border: #f89554;
+    --border-block: #7f7f7f;
+}
+
+/* color: #f89554*/
+/*  color: #f2e2dd*/
+/*  color:#426c79*/
+/*  color:#00213a*/
+/*  color:#000712*/

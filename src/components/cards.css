@@ -1,0 +1,28 @@
+.card-deck .card {
+    margin-bottom: 50px !important;
+}
+
+.border1 {
+    border:0 solid red;
+}
+
+.outline1 {
+    outline: 0 solid red;
+}
+
+
+.overlay {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card.none {
+    display: none !important;
+}
