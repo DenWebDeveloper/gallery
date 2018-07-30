@@ -1,4 +1,4 @@
-import {observable,computed} from 'mobx'
+import {observable, computed} from 'mobx'
 
 class Gallery {
     constructor(rootStore) {
@@ -8,7 +8,13 @@ class Gallery {
 
     /* Globbal galleru settings */
 
-    @observable images = [];
+    @observable images = {};
+
+    @observable imagesOptions = {};
+
+    @observable state1 = 1;
+
+    @observable lastId = 0;
 
     @observable order = [];
 
@@ -18,24 +24,21 @@ class Gallery {
 
     @observable typeHeight = 'fixed';
 
+    @observable modalDraggableHeight = 'fixed';
+
     @observable numberImagesWidth = 1;
 
     @observable displayOnce = 1;
 
     @observable widthBorder = 0;
 
-
-    @computed get heightRow() {
-        return this.height + 40;
-    }
-
-    @computed get widthColumn() {
-        return this.width + 20;
+    @computed get heightBlock() {
+        return (this.lastId / 3) * this.heightRow;
     }
 
     @observable typeBorder = 'around';
 
-    @observable position = 'left';
+    @observable typeText = 'around';
 
     @observable width = 100;
 

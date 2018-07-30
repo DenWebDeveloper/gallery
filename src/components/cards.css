@@ -2,27 +2,102 @@
     margin-bottom: 50px !important;
 }
 
-.border1 {
-    border:0 solid red;
-}
-
-.outline1 {
+.card-deck .wrapper {
+    border: 0 solid red;
+    display: block;
     outline: 0 solid red;
+    box-sizing: border-box;
+    background-color: #825959;
 }
 
+.card-deck .card {
+    border: 0 solid red;
+    position: relative;
+    display: block;
+    outline: 0 solid red;
+    box-sizing: border-box;
+    background-color: #825959;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-body.text {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+img.fixed {
+    max-height: 100px;
+    height: 100px;
+}
+
+.wrapper.snapping {
+    overflow: hidden;
+}
+
+img.snapping {
+    width: 100%;
+    height: 100%;
+}
+
+img.adaptive {
+    height: auto;
+}
+
+.card-body.text.hover {
+    display: none;
+}
+
+.card:hover .card-body.text.hover {
+    display: block;
+}
+
+.card-body.text.onimg {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 10px;
+}
+
+.card-body.text.right {
+    text-align: right;
+    right: 0;
+}
+
+.card-body.text.left {
+    text-align: left;
+    left: 0;
+}
+
+.card-body.text.center {
+    text-align: center;
+    left: 0;
+    right: 0;
+}
 
 .overlay {
-    position: fixed;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(217, 208, 222, 0.5);
+}
+
+.overlay img {
+    width: 500px;
+    height: 500px;
 }
 
 .card.none {
     display: none !important;
+}
+
+.modal {
+    display: block !important;
+
 }

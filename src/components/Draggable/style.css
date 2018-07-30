@@ -1,31 +1,15 @@
-.draggable-container {
-    min-height: 100vh;
-    background-color: #EEE;
-    display: flex;
-    padding: 20px;
-}
 
-.demo2-outer {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    background-color: #EEE;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: -webkit-flex;
-    -webkit-justify-content: center;
-    -webkit-align-items: center;
-}
-.demo2 {
-    width: 190px;
-    height: 100%;
+
+.draggable-container  {
+    padding: 20px;
 }
 .draggable-container__img-wrapper {
     position: absolute;
     border: 1px solid black;
-    border-radius: 99px;
     width: 100px;
     background-color: #fff;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 100px;
 }

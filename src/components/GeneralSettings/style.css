@@ -17,3 +17,7 @@
     color: #426c79;
     width: 100%;
 }
+
+.card-deck {
+    align-items: flex-start !important;
+}

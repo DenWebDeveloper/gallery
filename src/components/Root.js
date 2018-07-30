@@ -3,7 +3,7 @@ import {Provider} from 'mobx-react'
 
 import RootStore from '../stores'
 import GeneralSettings from './GeneralSettings'
-import D from './Draggable'
+import Cards from './Cards'
 import '../../node_modules/bootstrap/dist/css/bootstrap.css'
 import './style.css'
 
@@ -18,9 +18,10 @@ class Root extends Component {
                             <GeneralSettings/>
                         </div>
                         <div className="col-md-7">
-                            <D/>
+                            <Cards/>
                         </div>
                     </div>
+
                 </div>
             </Provider>
         );
